@@ -18,7 +18,6 @@ class CreateSurveysTable extends Migration
             $table->increments('id');
             $table->integer('project_id');
             $table->string('body');
-            $table->enum('infrastrecture', 'true','false')->default('false');
             $table->timestamps();
         });
 
