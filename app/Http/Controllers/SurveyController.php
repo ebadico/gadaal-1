@@ -29,6 +29,15 @@ class SurveyController extends Controller
 
     }
 
+     public function indexindex()
+    {
+            
+            $surveys=survey::get();
+            return view('home', compact('surveys'));
+
+
+    }
+
     /**
      * Show the form for creating a new resource.
      *

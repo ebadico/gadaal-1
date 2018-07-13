@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Survey;
 class HomeController extends Controller
 {
     /**
@@ -11,10 +11,10 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 
     /**
      * Show the application dashboard.
@@ -22,7 +22,13 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        return view('home');
+    {          
+            //dd(Request()->all());
+
+            $surveys=survey::orderBy('id', 'desc')->get();
+            return view('home', compact('surveys'));
+       // return view('home');
     }
+
+   
 }
