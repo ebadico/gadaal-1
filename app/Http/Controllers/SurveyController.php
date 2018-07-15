@@ -29,14 +29,7 @@ class SurveyController extends Controller
 
     }
 
-     public function indexindex()
-    {
-            
-            $surveys=survey::get();
-            return view('home', compact('surveys'));
-
-
-    }
+    
 
     /**
      * Show the form for creating a new resource.
@@ -57,15 +50,19 @@ class SurveyController extends Controller
     public function store(Request $request)
     {
         $survey = survey::create($request->all());
-        if ($request->category1===true) {
-            $survey->categories()->attach(1);
-        }
-        if ($request->category2===true) {
-            $survey->categories()->attach(2);
-        }
-        if ($request->category3===true) {
-            $survey->categories()->attach(3);
-        }
+
+        return response()
+                ->json(['Success' => 'Waa la diiwaan Gashay']);
+
+        // if ($request->category1===true) {
+        //     $survey->categories()->attach(1);
+        // }
+        // if ($request->category2===true) {
+        //     $survey->categories()->attach(2);
+        // }
+        // if ($request->category3===true) {
+        //     $survey->categories()->attach(3);
+        // }
         //$survey->questions()->attach($request->questions);
     }
 
