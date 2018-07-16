@@ -26,7 +26,7 @@
                         </div>
 
 
-                        image <input type="text" name="image" required="">
+                        image <input type="file" name="image" required="">
                         position <input type="text" name="position" required="">
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
