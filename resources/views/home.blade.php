@@ -3,10 +3,24 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-10">
+        <div class="col-md-2">
+            <div class="card">
+               <div class="card-header">Nav</div>
+               <ul class="list-group">
+                  <a href="{{ route('home') }}">
+                 <li class="list-group-item">Home
+                 </li></a>
+                   <a href="{{ route('home') }}">
+                 <li class="list-group-item">Users
+                 </li></a>
+               </ul>
+            </div>
+
+        </div>
+        <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Dashboard</div>
-
+                
                    <table class="table table-bordered">
                        <thead class="thead-dark">
                            <tr>

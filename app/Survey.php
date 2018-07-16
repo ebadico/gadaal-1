@@ -8,7 +8,9 @@ class Survey extends Model
 {
 
 
-          protected $fillable = ['point'];
+          protected $fillable = ['point',
+          				'gender','age','leak','dagaal',
+          				'vdate', 'price','bribe','jirgaan'];
 
 // a survey belongs to one project 
 
