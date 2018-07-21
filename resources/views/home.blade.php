@@ -23,23 +23,33 @@
                 
                    <table class="table table-bordered">
                        <thead class="thead-dark">
-                           <tr>
+                           <tr> 
                                <th>ID</th>
                                <th>Water kiosk</th>
                                 <th>Status</th>
+                                <th>Gender</th>
+                                <th>age</th>
                                <th>Created at</th>
+                                <th>Action</th>
+
                            </tr>
                        </thead>
                    @foreach ($surveys as $survey)
                        <tbody>
 
-                           <tr><a href="{{$survey->id}}">
-                               <td>{{$survey->id}}</td>
+                           <tr>
+                               <td><a href=""> {{$survey->id}}</a>
+                               </td>
                                <td>{{$survey->point}}</td>
+                               <td>{{$survey->gender}}</td>
+                               <td>{{$survey->age}}</td>
                                <td>{{$survey->status}}</td>
                                <td>
                                 {{$survey->created_at->format('d/m/Y')}} </td>
-                           </tr></a>
+                              <td>
+                                <a href="{{ route('home.show',$survey->id) }}">more info</a>
+                              </td>
+                           </tr>
                        </tbody>
                      @endforeach
 

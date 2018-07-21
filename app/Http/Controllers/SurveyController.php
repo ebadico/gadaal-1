@@ -75,6 +75,8 @@ class SurveyController extends Controller
     public function show(Survey $survey)
     {
         //
+        return response()->json(survey::findorFail($survey), 200);
+
     }
 
     /**

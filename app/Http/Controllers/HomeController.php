@@ -30,5 +30,16 @@ class HomeController extends Controller
        // return view('home');
     }
 
+    public function show($survey){
+
+
+        $survey = survey::findOrFail($survey);
+
+        return view('show', compact('survey'));
+
+        //return $survey;
+
+    }
+
    
 }
