@@ -81,7 +81,8 @@ class AuthController extends Controller
             'userd' =>  auth()->user(),
             'name' =>  auth()->user()->name,
             'image' =>  auth()->user()->image,
-            'position' =>  auth()->user()->position
+            'position' =>  auth()->user()->position,
+            'body' =>  auth()->user()->body
 
 
 

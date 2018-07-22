@@ -21,7 +21,7 @@ class User extends Authenticatable implements JWTSubject
     //protected $guard_name = 'web'; // or whatever guard you want to use
 
     protected $fillable = [
-        'name', 'email', 'password','image','position'
+        'name', 'email', 'password','image','position', 'body'
     ];
 
     /**
