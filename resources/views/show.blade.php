@@ -134,16 +134,13 @@
                 <div class="card-header">Violence</div>
                 <div class="card-body">
                     <ol class="list-group list-group-flush">
-                    <li class="list-group-item">Tap Leakege: 
-                      <span class="badge badge-primary badge-pill">{{$survey->leak}}</span></li>
-                    <li class="list-group-item">Handle Missing: 
-                          <span class="badge badge-primary badge-pill">{{$survey->key}}</span></li>
-                    <li class="list-group-item">Broken Tap: 
-                          <span class="badge badge-primary badge-pill">{{$survey->tap}}</span></li>
-                    <li class="list-group-item">Broken Fence: 
-                          <span class="badge badge-primary badge-pill">{{$survey->fence}}</span></li>
-                    <li class="list-group-item">Broken Gate:
-                          <span class="badge badge-primary badge-pill">{{$survey->gate}}</span></li>
+                    <li class="list-group-item">Security Problems: 
+                      <span class="badge badge-primary badge-pill">{{$survey->security}}</span></li>
+                    <li class="list-group-item">Security Problems at Night: 
+                          <span class="badge badge-primary badge-pill">{{$survey->securitynight}}</span></li>
+                    <li class="list-group-item">Security Problems during the day: 
+                          <span class="badge badge-primary badge-pill">{{$survey->securityday}}</span></li>
+                    
                   </ol>
                   </div>
             </div>
