@@ -112,16 +112,16 @@
                 <div class="card-header">Quality and Quantity</div>
                <div class="card-body">
                     <ol class="list-group list-group-flush">
-                    <li class="list-group-item">Tap Leakege: 
-                      <span class="badge badge-primary badge-pill">{{$survey->leak}}</span></li>
-                    <li class="list-group-item">Handle Missing: 
-                          <span class="badge badge-primary badge-pill">{{$survey->key}}</span></li>
-                    <li class="list-group-item">Broken Tap: 
-                          <span class="badge badge-primary badge-pill">{{$survey->tap}}</span></li>
-                    <li class="list-group-item">Broken Fence: 
-                          <span class="badge badge-primary badge-pill">{{$survey->fence}}</span></li>
-                    <li class="list-group-item">Broken Gate:
-                          <span class="badge badge-primary badge-pill">{{$survey->gate}}</span></li>
+                    <li class="list-group-item">Water Test: 
+                      <span class="badge badge-primary badge-pill">{{$survey->taste}}</span></li>
+                    <li class="list-group-item">Water Dirty: 
+                          <span class="badge badge-primary badge-pill">{{$survey->dirtywater}}</span></li>
+                    <li class="list-group-item">Washing Clothes: 
+                          <span class="badge badge-primary badge-pill">{{$survey->Hardwater}}</span></li>
+                    <li class="list-group-item">Slow Water: 
+                          <span class="badge badge-primary badge-pill">{{$survey->slowwater}}</span></li>
+                    <li class="list-group-item">All Four Taps:
+                          <span class="badge badge-primary badge-pill">{{$survey->fourtaps}}</span></li>
                   </ol>
                   </div>
             </div>
