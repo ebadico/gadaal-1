@@ -154,16 +154,18 @@
                 <div class="card-header">Access</div>
                <div class="card-body">
                     <ol class="list-group list-group-flush">
-                    <li class="list-group-item">Tap Leakege: 
-                      <span class="badge badge-primary badge-pill">{{$survey->leak}}</span></li>
-                    <li class="list-group-item">Handle Missing: 
-                          <span class="badge badge-primary badge-pill">{{$survey->key}}</span></li>
-                    <li class="list-group-item">Broken Tap: 
-                          <span class="badge badge-primary badge-pill">{{$survey->tap}}</span></li>
-                    <li class="list-group-item">Broken Fence: 
-                          <span class="badge badge-primary badge-pill">{{$survey->fence}}</span></li>
-                    <li class="list-group-item">Broken Gate:
-                          <span class="badge badge-primary badge-pill">{{$survey->gate}}</span></li>
+                    <li class="list-group-item">Kiosk is too Far: 
+                      <span class="badge badge-primary badge-pill">{{$survey->faraway}}</span></li>
+                    <li class="list-group-item">Light at Night: 
+                          <span class="badge badge-primary badge-pill">{{$survey->light}}</span></li>
+                    <li class="list-group-item">Adults only: 
+                          <span class="badge badge-primary badge-pill">{{$survey->toaccess}}</span></li>
+                    <li class="list-group-item">Gate Locked: 
+                          <span class="badge badge-primary badge-pill">{{$survey->gatelocked}}</span></li>
+                    <li class="list-group-item">Over Crowded:
+                          <span class="badge badge-primary badge-pill">{{$survey->overcrowded}}</span></li> 
+                      <li class="list-group-item">Women waiting vs Men:
+                          <span class="badge badge-primary badge-pill">{{$survey->waitingtime}}</span></li>
                   </ol>
                   </div>
             </div>
