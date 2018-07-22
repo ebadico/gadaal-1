@@ -22,5 +22,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/show/{survey}', 'HomeController@show')->name('home.show');
 
+
+Route::get('auth/', 'Controller@index')->name('authindex');
+Route::get('auth/show/{user}', 'Controller@show')->name('authshow');
+
 //Route::get('/home', 'SurveyController@indexindex')->name('home');
 
