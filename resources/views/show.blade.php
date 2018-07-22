@@ -85,9 +85,24 @@
     <div class="col-md-4">
             <div class="card">
                 <div class="card-header">Finance</div>
-                {{$survey->price}}
-                {{$survey->bribe}}
-                {{$survey->age}}
+                <div class="card-body">
+                    <ol class="list-group list-group-flush">
+                    <li class="list-group-item">Extra Cash: 
+                      <span class="badge badge-primary badge-pill">{{$survey->extracash}}</span></li>
+                    <li class="list-group-item">Bribe: 
+                          <span class="badge badge-primary badge-pill">{{$survey->bribe}}</span></li>
+                    <li class="list-group-item">A lot of Money: 
+                          <span class="badge badge-primary badge-pill">{{$survey->alotofmoney}}</span></li>
+                    <li class="list-group-item">keeps Money: 
+                          <span class="badge badge-primary badge-pill">{{$survey->kept}}</span></li>
+                    <li class="list-group-item">Income:
+                          <span class="badge badge-primary badge-pill">{{$survey->income}}</span></li>
+                    <li class="list-group-item">Invoice:
+                          <span class="badge badge-primary badge-pill">{{$survey->invoice}}</span></li>
+                    <li class="list-group-item">Water Cheating:
+                          <span class="badge badge-primary badge-pill">{{$survey->cheating}}</span></li>
+                  </ol>
+                  </div>
             </div>
     </div>
 
@@ -95,28 +110,62 @@
     <div class="col-md-4">
             <div class="card">
                 <div class="card-header">Quality and Quantity</div>
-                {{$survey->id}}
-                {{$survey->gender}}
-                {{$survey->age}}
+               <div class="card-body">
+                    <ol class="list-group list-group-flush">
+                    <li class="list-group-item">Tap Leakege: 
+                      <span class="badge badge-primary badge-pill">{{$survey->leak}}</span></li>
+                    <li class="list-group-item">Handle Missing: 
+                          <span class="badge badge-primary badge-pill">{{$survey->key}}</span></li>
+                    <li class="list-group-item">Broken Tap: 
+                          <span class="badge badge-primary badge-pill">{{$survey->tap}}</span></li>
+                    <li class="list-group-item">Broken Fence: 
+                          <span class="badge badge-primary badge-pill">{{$survey->fence}}</span></li>
+                    <li class="list-group-item">Broken Gate:
+                          <span class="badge badge-primary badge-pill">{{$survey->gate}}</span></li>
+                  </ol>
+                  </div>
             </div>
     </div>
+  </div>
 
     <div class="row mt-4">
       <div class="col-md-4">
             <div class="card">
                 <div class="card-header">Violence</div>
-                {{$survey->id}}
-                {{$survey->gender}}
-                {{$survey->age}}
+                <div class="card-body">
+                    <ol class="list-group list-group-flush">
+                    <li class="list-group-item">Tap Leakege: 
+                      <span class="badge badge-primary badge-pill">{{$survey->leak}}</span></li>
+                    <li class="list-group-item">Handle Missing: 
+                          <span class="badge badge-primary badge-pill">{{$survey->key}}</span></li>
+                    <li class="list-group-item">Broken Tap: 
+                          <span class="badge badge-primary badge-pill">{{$survey->tap}}</span></li>
+                    <li class="list-group-item">Broken Fence: 
+                          <span class="badge badge-primary badge-pill">{{$survey->fence}}</span></li>
+                    <li class="list-group-item">Broken Gate:
+                          <span class="badge badge-primary badge-pill">{{$survey->gate}}</span></li>
+                  </ol>
+                  </div>
             </div>
     </div>
 
     <div class="col-md-4">
             <div class="card">
                 <div class="card-header">Access</div>
-                {{$survey->id}}
-                {{$survey->gender}}
-                {{$survey->age}}
+               <div class="card-body">
+                    <ol class="list-group list-group-flush">
+                    <li class="list-group-item">Tap Leakege: 
+                      <span class="badge badge-primary badge-pill">{{$survey->leak}}</span></li>
+                    <li class="list-group-item">Handle Missing: 
+                          <span class="badge badge-primary badge-pill">{{$survey->key}}</span></li>
+                    <li class="list-group-item">Broken Tap: 
+                          <span class="badge badge-primary badge-pill">{{$survey->tap}}</span></li>
+                    <li class="list-group-item">Broken Fence: 
+                          <span class="badge badge-primary badge-pill">{{$survey->fence}}</span></li>
+                    <li class="list-group-item">Broken Gate:
+                          <span class="badge badge-primary badge-pill">{{$survey->gate}}</span></li>
+                  </ol>
+                  </div>
             </div>
     </div>
 
@@ -124,9 +173,20 @@
     <div class="col-md-4">
             <div class="card">
                 <div class="card-header">Health</div>
-                {{$survey->id}}
-                {{$survey->gender}}
-                {{$survey->age}}
+               <div class="card-body">
+                    <ol class="list-group list-group-flush">
+                    <li class="list-group-item">Tap Leakege: 
+                      <span class="badge badge-primary badge-pill">{{$survey->leak}}</span></li>
+                    <li class="list-group-item">Handle Missing: 
+                          <span class="badge badge-primary badge-pill">{{$survey->key}}</span></li>
+                    <li class="list-group-item">Broken Tap: 
+                          <span class="badge badge-primary badge-pill">{{$survey->tap}}</span></li>
+                    <li class="list-group-item">Broken Fence: 
+                          <span class="badge badge-primary badge-pill">{{$survey->fence}}</span></li>
+                    <li class="list-group-item">Broken Gate:
+                          <span class="badge badge-primary badge-pill">{{$survey->gate}}</span></li>
+                  </ol>
+                  </div>
             </div>
     </div>
 </div>
