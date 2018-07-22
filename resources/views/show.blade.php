@@ -175,15 +175,10 @@
                <div class="card-body">
                     <ol class="list-group list-group-flush">
                     <li class="list-group-item">Tap Leakege: 
-                      <span class="badge badge-primary badge-pill">{{$survey->leak}}</span></li>
+                      <span class="badge badge-primary badge-pill">{{$survey->drink}}</span></li>
                     <li class="list-group-item">Handle Missing: 
-                          <span class="badge badge-primary badge-pill">{{$survey->key}}</span></li>
-                    <li class="list-group-item">Broken Tap: 
-                          <span class="badge badge-primary badge-pill">{{$survey->tap}}</span></li>
-                    <li class="list-group-item">Broken Fence: 
-                          <span class="badge badge-primary badge-pill">{{$survey->fence}}</span></li>
-                    <li class="list-group-item">Broken Gate:
-                          <span class="badge badge-primary badge-pill">{{$survey->gate}}</span></li>
+                          <span class="badge badge-primary badge-pill">{{$survey->sick}}</span></li>
+                   
                   </ol>
                   </div>
             </div>
