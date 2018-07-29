@@ -83,7 +83,10 @@
                 <div class="title m-b-md">
                     NRC Wash Application
                 </div>
-
+<map name="image-map">
+    <area target="_blank" alt="Town" title="Town" href="google.com" coords="1250,3106,865" shape="circle">
+    <area target="_blank" alt="test" title="test" href="test.com" coords="2984,2499,3745,3081" shape="rect">
+</map>
                
             </div>
         </div>

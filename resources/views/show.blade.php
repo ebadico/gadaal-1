@@ -51,8 +51,8 @@
                 <div class="card-header text-white bg-danger">Kios</div>
               <div class="row">
                 <div class="card-body">
-                  <b>Point</b>: {{$survey->point}}
-
+                  <b>Point</b>: {{$survey->town->name}}
+                  <b>Gps</b>Lat:{{$survey->town->latitude}}   || Long:{{$survey->town->longitude}}
                 </div>
               </div>
             </div>

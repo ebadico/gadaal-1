@@ -20,7 +20,7 @@ Route::group([
     Route::get('projects/{project}', 'ProjectController@show');
 
 
-    Route::apiResource('questions', 'QuestionController');
+    Route::apiResource('towns', 'TownController');
 
 
     Route::apiResource('questions', 'QuestionController');

@@ -13,7 +13,7 @@ class Survey extends Model
           	'gender', 'age', 'fullname','phone','point',
           	'leak','key','tap','fence','gate',
           	'price','bribe','income','invoice', 'cheating',
-  			 'extracash','alotofmoney','kept','income','invoice',
+  			     'extracash','alotofmoney','kept','income','invoice',
    			 'taste','dirtywater','Hardwater','slowwater','fourtaps',
 			'faraway','light','longer','toaccess','gatelocked','overcrowded','waitingtime',
 			'drink', 'sick',
@@ -24,14 +24,11 @@ class Survey extends Model
 // a survey belongs to one project 
 
 
- 
+ public function town()
+              {
+                  return $this->belongsTo(Town::class);
+              }
 
-
-
-		public function categories()
-           {
-             return $this->belongsToMany(Category::class);
-           }
 
            public function questions()
            {

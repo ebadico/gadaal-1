@@ -4,7 +4,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                <div class="card-header">{{ __('Register') }} 
+
+                	<a class="float-right" href="{{ route('register') }}">Create New User</a>
+                </div>
 
                                 <div class="card-body">
                                 	<table class="table table-bordered">
