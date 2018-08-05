@@ -15,7 +15,7 @@ class Survey extends Model
           	 'gender', 'age', 'fullname','phone','point','town_id',
           	 'leak','key','tap','fence','gate',
           	 'price','bribe','income','invoice', 'cheating',
-  			     'extracash','alotofmoney','kept','income','invoice',
+  			     'extracash','alotofmoney','kept','income','invoice','pjirgaan',
        			 'taste','dirtywater','Hardwater','slowwater','fourtaps',
     			   'faraway','light','longer','toaccess','gatelocked','overcrowded','waitingtime',
     			   'drink', 'sick','stomachache','headache',

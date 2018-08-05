@@ -108,6 +108,8 @@
                 <div class="card-header">Finance</div>
                 <div class="card-body">
                     <ol class="list-group list-group-flush">
+                      <li class="list-group-item">20 Litre Price: 
+                      <span class="badge badge-primary badge-pill">{{$survey->extracash}}</span></li>
                     <li class="list-group-item">Extra Cash: 
                       <span class="badge badge-primary badge-pill">{{$survey->extracash}}</span></li>
                     <li class="list-group-item">Bribe: 
@@ -123,6 +125,8 @@
                     <li class="list-group-item">Water Cheating:
                           <span class="badge badge-primary badge-pill">{{$survey->cheating}}</span></li>
                   </ol>
+
+
                   </div>
             </div>
     </div>
