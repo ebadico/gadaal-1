@@ -50,7 +50,7 @@ class SurveyController extends Controller
     public function store(Request $request)
     {
         $survey = survey::create($request->all());
-
+        $survey->setStatus('Not Fixed', 'Waa meesha wax ka bilowdaan');
         return response()
                 ->json(['Success' => 'Waa la diiwaan Gashay']);
 

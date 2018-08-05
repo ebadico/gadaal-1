@@ -2,8 +2,15 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-2">
             <div class="card">
+               <div class="card-header bg-primary">Nav</div>
+                   @include('layouts.nav')
+              
+            </div>
+
+          </div>
+        <div class="col-md-10">
                 <div class="card-header">{{ __('Register') }} 
 
                 	<a class="float-right" href="{{ route('register') }}">Create New User</a>
@@ -41,6 +48,9 @@
                      @endforeach
 
                    </table>
+                    <div class="col-md-12 ">
+                      {{$users->links()}}
+                   </div>
 								</div>
 			</div>
 		</div>

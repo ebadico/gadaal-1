@@ -4,7 +4,7 @@
 <div class="container">
 
     <div class="row">
-        <div class="col-md-10">
+        <div class="col-md-8">
             <div class="card">
                 <div class="card-header text-white bg-danger">Personal Information</div>
               <div class="row">
@@ -40,9 +40,6 @@
                       </div>
                     </div>
                 </div>
-
-               
-                
           </div>            
         </div>
 
@@ -52,11 +49,32 @@
               <div class="row">
                 <div class="card-body">
                   <b>Point</b>: {{$survey->town->name}}
-                  <b>Gps</b>Lat:{{$survey->town->latitude}}   || Long:{{$survey->town->longitude}}
+                  <b>Gps </b> Lat: {{$survey->town->latitude}}   || Long:{{$survey->town->longitude}}
                 </div>
               </div>
             </div>
-          </div>
+        </div>
+        <div class="col-md-2">
+        <div class="card">
+            <div class="card-header text-white bg-primary">Status</div>
+                  <div class="card-body">
+                    <form method="POST">
+                      @csrf
+                     <div class="form-group">
+                     <select class="form-control">
+                        <option> {{$survey->status}}</option>
+                        <option> it has been fixed</option>
+                        <option> </option>
+                      </select>
+                      </div>
+
+                        <input class="btn btn-primary btn-block" type="submit" name="">
+
+                    </form>
+                  </div>
+
+        </div>
+      </div>
 
     </div>
 

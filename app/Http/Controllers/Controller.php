@@ -17,7 +17,7 @@ class Controller extends BaseController
 
       public function index()
     {          
-        $users=user::orderBy('id', 'desc')->get();
+        $users=user::orderBy('id', 'desc')->paginate(10);
 
     	return view('auth.index', compact('users'));
 
