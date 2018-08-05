@@ -108,8 +108,10 @@
                 <div class="card-header text-white bg-primary">Finance</div>
                 <div class="card-body">
                     <ol class="list-group list-group-flush">
+                      <li class="list-group-item">Price: 
+                      <span class="badge badge-primary badge-pill">{{$survey->price}}</span></li>
                       <li class="list-group-item">20 Litre Price: 
-                      <span class="badge badge-primary badge-pill">{{$survey->extracash}}</span></li>
+                      <span class="badge badge-primary badge-pill">{{$survey->pjirgaan}}</span></li>
                     <li class="list-group-item">Extra Cash: 
                       <span class="badge badge-primary badge-pill">{{$survey->extracash}}</span></li>
                     <li class="list-group-item">Bribe: 
