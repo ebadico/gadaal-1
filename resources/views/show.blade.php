@@ -105,7 +105,7 @@
 
     <div class="col-md-4">
             <div class="card">
-                <div class="card-header">Finance</div>
+                <div class="card-header text-white bg-primary">Finance</div>
                 <div class="card-body">
                     <ol class="list-group list-group-flush">
                       <li class="list-group-item">20 Litre Price: 
@@ -134,7 +134,7 @@
 
     <div class="col-md-4">
             <div class="card">
-                <div class="card-header">Quality and Quantity</div>
+                <div class="card-header text-white bg-primary">Quality and Quantity</div>
                <div class="card-body">
                     <ol class="list-group list-group-flush">
                     <li class="list-group-item">Water Test: 
@@ -156,7 +156,7 @@
     <div class="row mt-4">
       <div class="col-md-4">
             <div class="card">
-                <div class="card-header">Violence</div>
+                <div class="card-header text-white bg-success">Violence</div>
                 <div class="card-body">
                     <ol class="list-group list-group-flush">
                     <li class="list-group-item">Security Problems: 
@@ -173,7 +173,7 @@
 
     <div class="col-md-4">
             <div class="card">
-                <div class="card-header">Access</div>
+                <div class="card-header text-white bg-success">Access</div>
                <div class="card-body">
                     <ol class="list-group list-group-flush">
                     <li class="list-group-item">Kiosk is too Far: 
@@ -196,7 +196,7 @@
 
     <div class="col-md-4">
             <div class="card">
-                <div class="card-header">Health</div>
+                <div class="card-header text-white bg-success">Health</div>
                <div class="card-body">
                     <ol class="list-group list-group-flush">
                     <li class="list-group-item">Tap Leakege: 
