@@ -58,8 +58,8 @@
         <div class="card">
             <div class="card-header text-white bg-primary">Status</div>
                   <div class="card-body">
-                    <form method="POST" action="{{route('surveys.updates,[$survey->id]')}}
-                      ">
+                    <form method="POST" 
+                      >
                       @csrf
                       {{method_field('PUT')}}
 
