@@ -54,16 +54,6 @@ class SurveyController extends Controller
         return response()
                 ->json(['Success' => 'Waa la diiwaan Gashay']);
 
-        // if ($request->category1===true) {
-        //     $survey->categories()->attach(1);
-        // }
-        // if ($request->category2===true) {
-        //     $survey->categories()->attach(2);
-        // }
-        // if ($request->category3===true) {
-        //     $survey->categories()->attach(3);
-        // }
-        //$survey->questions()->attach($request->questions);
     }
 
     /**
@@ -98,8 +88,10 @@ class SurveyController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Survey $survey)
-    {
-        //
+    {   
+                    dd(Request()->all());
+
+        $survey->setStatus('it has been fixed', 'Waa meesha wax ka bilowdaan');
     }
 
     /**

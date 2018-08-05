@@ -67,6 +67,11 @@ class HomeController extends Controller
                             'health', 'violence', 'access'));
     }
 
+    public function fixed($Request)
+    {
+        
+    }
+
     public function show($survey){
 
 
