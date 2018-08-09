@@ -22,7 +22,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/show/{survey}', 'HomeController@show')->name('home.show');
-Route::post('surveys', 'SurveyController@update')->name('surveys.updates');
+//Route::post('surveys', 'SurveyController@update')->name('surveys.updates');
+Route::resource('surveys', 'SurveyController');
 
 
 Route::get('auth/', 'Controller@index')->name('authindex');

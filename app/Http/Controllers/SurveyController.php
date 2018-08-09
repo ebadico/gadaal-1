@@ -89,9 +89,10 @@ class SurveyController extends Controller
      */
     public function update(Request $request, Survey $survey)
     {   
-                    dd(Request()->all());
+            //dd(Request()->all());
 
-        $survey->setStatus('it has been fixed', 'Waa meesha wax ka bilowdaan');
+        $survey->setStatus($request->status, 'Waa meesha wax ka badalmeen');
+        return redirect('home');
     }
 
     /**
