@@ -58,15 +58,17 @@
         <div class="card">
             <div class="card-header text-white bg-primary">Status</div>
                   <div class="card-body">
-                    <form method="POST" 
+                    <form method="POST" action="{{ route('surveys.update', $survey->id) }}" 
                       >
-                      @csrf
-                      {{method_field('PUT')}}
+                       @method('PATCH')
+                        @csrf
+
+
 
                      <div class="form-group">
-                     <select class="form-control">
+                     <select class="form-control" name="status">
                         <option> {{$survey->status}}</option>
-                        <option> it has been fixed</option>
+                        <option value="it has been fixed"> it has been fixed</option>
                         <option> </option>
                       </select>
                       </div>
