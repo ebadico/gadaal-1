@@ -12,7 +12,7 @@ class Survey extends Model
     
           protected $fillable = [
 
-          	 'gender', 'age', 'fullname','phone','point','town_id',
+          	 'gender', 'age','point','town_id',
           	 'leak','key','tap','fence','gate',
           	 'price','bribe','income','invoice', 'cheating',
   			     'extracash','alotofmoney','kept','income','invoice','pjirgaan',
