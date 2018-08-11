@@ -1,11 +1,7 @@
 <?php
 
 
-Route::group([
-
-    'middleware' => 'api',
-
-], function ($router) {
+Route::group(['prefix'=>'auth'], function ($router) {
 
     Route::post('login', 'AuthController@login')->name('apilogin');
     Route::post('logout', 'AuthController@logout');

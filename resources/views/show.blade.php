@@ -86,7 +86,8 @@
     <div class="row mt-4">
       <div class="col-md-4">
             <div class="card">
-                <div class="card-header text-white bg-primary">Infrastructure</div>
+                <div class="card-header text-white bg-primary">
+           Infrastructure {{$survey->infrastructure ? 'Yes' : 'No'}}</div>
                   <div class="card-body">
                     <ol class="list-group list-group-flush">
                     <li class="list-group-item">Tap Leakege: 
@@ -107,7 +108,8 @@
 
     <div class="col-md-4">
             <div class="card">
-                <div class="card-header text-white bg-primary">Finance</div>
+                <div class="card-header text-white bg-primary">
+                  Finance {{$survey->finance ? 'Yes' : 'No'}}</div>
                 <div class="card-body">
                     <ol class="list-group list-group-flush">
                       <li class="list-group-item">Price: 
@@ -146,7 +148,7 @@
                     <li class="list-group-item">Water Dirty: 
                           <span class="badge badge-primary badge-pill">{{$survey->dirtywater}}</span></li>
                     <li class="list-group-item">Washing Clothes: 
-                          <span class="badge badge-primary badge-pill">{{$survey->Hardwater}}</span></li>
+                          <span class="badge badge-primary badge-pill">{{$survey->hardwater}}</span></li>
                     <li class="list-group-item">Slow Water: 
                           <span class="badge badge-primary badge-pill">{{$survey->slowwater}}</span></li>
                     <li class="list-group-item">All Four Taps:
@@ -192,6 +194,8 @@
                           <span class="badge badge-primary badge-pill">{{$survey->overcrowded}}</span></li> 
                       <li class="list-group-item">Women waiting vs Men:
                           <span class="badge badge-primary badge-pill">{{$survey->waitingtime}}</span></li>
+                      <li class="list-group-item">Waiting more than 15m:
+                          <span class="badge badge-primary badge-pill">{{$survey->longer}}</span></li>
                   </ol>
                   </div>
             </div>
