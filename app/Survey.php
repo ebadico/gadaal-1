@@ -18,7 +18,7 @@ class Survey extends Model
   			     'extracash','alotofmoney','kept','income','invoice','pjirgaan',
        			 'taste','dirtywater','hardwater','slowwater','fourtaps',
     			   'faraway','light','longer','toaccess','gatelocked','overcrowded','waitingtime',
-    			   'drink', 'sick','stomachache','headache',
+    			   'drink', 'sick','stomachache','headache','diarrhea',
     			   'security','securitynight','securityday','sgender',
              'infrastructure','finance','quantity','access','violence','health',
 
@@ -116,6 +116,81 @@ public function getfourtapsAttribute($value)
     }
 
 
+
+public function getsecurityAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+public function getsecuritynightAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+public function getsecuritydayAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+  public function getsgenderAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+
+
+public function getdrinkAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+public function getsickAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+public function getstomachacheAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+  public function getheadacheAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+
+  public function getdiarrheaAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+
+public function getfarawayAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+public function getlightAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+public function getlongerAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+  public function gettoaccessAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+
+  public function getgatelockedAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+ public function getovercrowdedlockedAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+public function getovercrowdedAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+
+public function getwaitingtimeAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
 
 
 

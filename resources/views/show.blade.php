@@ -187,10 +187,11 @@
                     <ol class="list-group list-group-flush">
                     <li class="list-group-item">Kiosk is too Far: 
                       <span class="badge badge-primary badge-pill">{{$survey->faraway}}</span></li>
-                    <li class="list-group-item">Light at Night: 
-                          <span class="badge badge-primary badge-pill">{{$survey->light}}</span></li>
+                    
                     <li class="list-group-item">Adults only: 
                           <span class="badge badge-primary badge-pill">{{$survey->toaccess}}</span></li>
+                    <li class="list-group-item">Light at Night: 
+                          <span class="badge badge-primary badge-pill">{{$survey->light}}</span></li>
                     <li class="list-group-item">Gate Locked: 
                           <span class="badge badge-primary badge-pill">{{$survey->gatelocked}}</span></li>
                     <li class="list-group-item">Over Crowded:
@@ -210,11 +211,19 @@
                 <div class="card-header text-white bg-success">Health</div>
                <div class="card-body">
                     <ol class="list-group list-group-flush">
-                    <li class="list-group-item">Tap Leakege: 
+                    <li class="list-group-item">Do you drink the water: 
                       <span class="badge badge-primary badge-pill">{{$survey->drink}}</span></li>
-                    <li class="list-group-item">Handle Missing: 
+                    <li class="list-group-item">Do you feel sick: 
                           <span class="badge badge-primary badge-pill">{{$survey->sick}}</span></li>
-                   
+
+                    <li class="list-group-item">Stomachache: 
+                          <span class="badge badge-primary badge-pill">{{$survey->stomachache}}</span></li>
+
+                    <li class="list-group-item">Headache: 
+                          <span class="badge badge-primary badge-pill">{{$survey->headache}}</span></li>
+                   <li class="list-group-item">Diarrhea: 
+                          <span class="badge badge-primary badge-pill">{{$survey->diarrhea}}</span></li>
+
                   </ol>
                   </div>
             </div>
