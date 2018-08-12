@@ -167,10 +167,13 @@
                     <ol class="list-group list-group-flush">
                     <li class="list-group-item">Security Problems: 
                       <span class="badge badge-primary badge-pill">{{$survey->security}}</span></li>
+                      <li class="list-group-item">Gender: 
+                          <span class="badge badge-primary badge-pill">{{$survey->sgender}}</span></li>
                     <li class="list-group-item">Security Problems at Night: 
                           <span class="badge badge-primary badge-pill">{{$survey->securitynight}}</span></li>
                     <li class="list-group-item">Security Problems during the day: 
                           <span class="badge badge-primary badge-pill">{{$survey->securityday}}</span></li>
+                    
                     
                   </ol>
                   </div>

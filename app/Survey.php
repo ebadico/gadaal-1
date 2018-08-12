@@ -98,6 +98,25 @@ public function getincomeAttribute($value)
 
 
 
+public function gettasteAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+public function getdirtywaterAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+public function getslowwaterAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+public function getfourtapsAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+
+
+
 
 
 }
