@@ -187,11 +187,10 @@
                     <ol class="list-group list-group-flush">
                     <li class="list-group-item">Kiosk is too Far: 
                       <span class="badge badge-primary badge-pill">{{$survey->faraway}}</span></li>
-                    
-                    <li class="list-group-item">Adults only: 
-                          <span class="badge badge-primary badge-pill">{{$survey->toaccess}}</span></li>
                     <li class="list-group-item">Light at Night: 
                           <span class="badge badge-primary badge-pill">{{$survey->light}}</span></li>
+                    <li class="list-group-item">Adults only: 
+                          <span class="badge badge-primary badge-pill">{{$survey->toaccess}}</span></li>
                     <li class="list-group-item">Gate Locked: 
                           <span class="badge badge-primary badge-pill">{{$survey->gatelocked}}</span></li>
                     <li class="list-group-item">Over Crowded:
