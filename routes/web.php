@@ -15,8 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
- //Route::resource('towns', 'TownsController');
-
 
 Auth::routes();
 
@@ -24,6 +22,7 @@ Route::middleware(['auth', 'activity'])->group(function ($router) {
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/show/{survey}', 'HomeController@show')->name('home.show');
 //Route::post('surveys', 'SurveyController@update')->name('surveys.updates');
+Route::resource('roles','RoleController');
 Route::get('surveys', 'SurveyController@index')->name('surveys');
 Route::get('towns', 'TownController@index')->name('towns');
 Route::get('auth/', 'Controller@index')->name('authindex');
