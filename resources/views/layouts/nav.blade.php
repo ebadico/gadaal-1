@@ -1,13 +1,13 @@
 <ul class="list-group">
   <a href="{{ route('home') }}">
    <li class="list-group-item">Home</li></a>
-   <a href="{{ route('surveys') }}">
+   <!-- <a href="{{ route('surveys') }}">
    <li class="list-group-item">Surveys</li>
-  </a>
+  </a> -->
   @role('Admin')
-  <a href="{{ route('towns') }}">
+  <!-- <a href="{{ route('towns') }}">
    <li class="list-group-item">Towns</li>
-  </a>
+  </a> -->
   <a href="{{ route('authindex') }}">
    <li class="list-group-item">Users </li></a>
   <a href="{{ route('activity') }}">
