@@ -12,17 +12,13 @@ Route::group(['prefix'=>'auth'], function ($router) {
 
 
 
-    Route::get('projects', 'ProjectController@index');
-    Route::get('projects/{project}', 'ProjectController@show');
+   
 
 
-    Route::apiResource('towns', 'TownController');
+    Route::apiResource('surveys', 'Api\SurveyController');
 
-
-    Route::apiResource('questions', 'QuestionController');
-
-
-    Route::apiResource('surveys', 'SurveyController');
-
-    Route::apiResource('categories', 'CategoryController');
-
+    // Route::apiResource('categories', 'CategoryController');
+    // Route::get('projects', 'ProjectController@index');
+    // Route::get('projects/{project}', 'ProjectController@show');
+    // Route::apiResource('towns', 'TownController');
+    // Route::apiResource('questions', 'QuestionController');

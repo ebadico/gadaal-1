@@ -60,7 +60,6 @@ class HomeController extends Controller
                     ->whereMonth('created_at', $now->month)->get();
             $access=survey::where('access', '1')
                     ->whereMonth('created_at', $now->month)->get();
-            $surveys=survey::with('town')->orderBy('id', 'desc')->paginate(9);
                 //return $surveys;
             return view('home', compact('surveys', 'counttwons',
                             'infrastructure','quantity','finance',

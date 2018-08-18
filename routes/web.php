@@ -20,8 +20,7 @@ Auth::routes();
 
 Route::middleware(['auth', 'activity'])->group(function ($router) {
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/show/{survey}', 'HomeController@show')->name('home.show');
-//Route::post('surveys', 'SurveyController@update')->name('surveys.updates');
+Route::resource('surveys', 'SurveyController');
 Route::resource('roles','RoleController');
 Route::get('surveys', 'SurveyController@index')->name('surveys');
 Route::get('towns', 'TownController@index')->name('towns');

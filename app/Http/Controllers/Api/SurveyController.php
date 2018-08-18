@@ -1,6 +1,7 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
+use App\Http\Controllers\Controller;
 
 use App\Survey;
 use App\Town;
@@ -26,12 +27,8 @@ class SurveyController extends Controller
     public function index()
     {
         
-        $surveys=survey::with('town')
-            ->orderBy('id', 'desc')->simplePaginate(15);
-        
-        return view('surveys.index', compact('surveys'));
             
-            //return response()->json(survey::get(), 200);
+            return response()->json(survey::get(), 200);
 
     }
 
@@ -71,10 +68,8 @@ class SurveyController extends Controller
     public function show($survey)
     {
         
-        $survey = survey::findOrFail($survey);
-
-        return view('surveys.show', compact('survey'));
-        //return response()->json(survey::findorFail($survey), 200);
+        
+        return response()->json(survey::findorFail($survey), 200);
 
     }
 
