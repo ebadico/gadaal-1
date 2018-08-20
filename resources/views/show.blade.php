@@ -148,7 +148,7 @@
                     <li class="list-group-item">Water Dirty: 
                           <span class="badge badge-primary badge-pill">{{$survey->dirtywater}}</span></li>
                     <li class="list-group-item">Washing Clothes: 
-                          <span class="badge badge-primary badge-pill">{{$survey->hardwater}}</span></li>
+                          <span class="badge badge-primary badge-pill">{{$survey->hardwater  ? 'Yes' : 'No'}}</span></li>
                     <li class="list-group-item">Slow Water: 
                           <span class="badge badge-primary badge-pill">{{$survey->slowwater}}</span></li>
                     <li class="list-group-item">All Four Taps:

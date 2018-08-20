@@ -83,6 +83,11 @@ class Survey extends Model
         return ($value ? 'Yes' : 'No');
     }
 
+    public function gethardwaterAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+
   public function getalotofmoneyAttribute($value)
     {
         return ($value ? 'Yes' : 'No');

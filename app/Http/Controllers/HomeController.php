@@ -47,6 +47,7 @@ class HomeController extends Controller
             ->toArray();
             //return $counttwons;
             $now = Carbon::now();
+            $allStatuses = survey::currentStatus('Not Fixed');
 
             $infrastructure=survey::where('infrastructure', '1')
                     ->whereMonth('created_at', $now->month)->get();
@@ -61,7 +62,7 @@ class HomeController extends Controller
             $access=survey::where('access', '1')
                     ->whereMonth('created_at', $now->month)->get();
                 //return $surveys;
-            return view('home', compact('surveys', 'counttwons',
+            return view('home', compact('allStatuses','surveys', 'counttwons',
                             'infrastructure','quantity','finance',
                             'health', 'violence', 'access'));
     }
