@@ -87,11 +87,7 @@
                                 <option value="{{ $role->id }}">{{ $role->name }} </option>
                             @endforeach;
                         </select>
-                    @if ($errors->has('role'))
-                        <span class="help-block">
-                            <strong>{{ $errors->first('role') }}</strong>
-                        </span>
-                    @endif 
+                   
                    
                 </div>
             </div>
