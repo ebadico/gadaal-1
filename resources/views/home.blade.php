@@ -13,6 +13,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -103,34 +104,7 @@
                   <div id="chart_div"></div>
 
               <div class="col-md">
-                <button type="button" class="btn btn-primary">
-                Infrastructure:  <span class="badge badge-light">{{count($infrastructure)}}</span>
-                </button>
-              </div>
-              <div class="col-md">
-                <button type="button" class="btn btn-primary">
-                Quantity:  <span class="badge badge-light">{{count($quantity)}}</span>
-                </button>
-              </div>
-              <div class="col-md">
-                <button type="button" class="btn btn-primary">
-                Finance:  <span class="badge badge-light">{{count($finance)}}</span>
-                </button>
-              </div>
-              <div class="col-md">
-                <button type="button" class="btn btn-primary">
-                Health:  <span class="badge badge-light">{{count($health)}}</span>
-                </button>
-              </div>
-              <div class="col-md">
-                <button type="button" class="btn btn-primary">
-                Violence:  <span class="badge badge-light">{{count($violence)}}</span>
-                </button>
-              </div>
-              <div class="col-md">
-                <button type="button" class="btn btn-primary">
-                Access:  <span class="badge badge-light">{{count($access)}}</span>
-                </button>
+
               </div>
 
             </div>
@@ -148,15 +122,104 @@
                </div>
                 </div>
                 
-            </div>                  
-              
-                </div>
+            </div> 
+        </div>
+        
 
 
                   
         </div>
 </main>
     </div>
- 
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <canvas id="myChart" width="400" height="300"></canvas>
+            </div>
+
+            <div class="col-md-4">
+                <canvas id="myChart2" width="400" height="300"></canvas>
+            </div>
+
+        </div>
+    </div>
+<script>
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Infrastructure", "Finance", "Quantity", "Access", "Health", "violence"],
+        datasets: [{
+            label: '# of Categories in this Month',
+            data: [{{count($infrastructure)}}, {{count($finance)}}, {{count($quantity)}}, {{count($access)}}, {{count($health)}}, {{count($violence)}}],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+
+var ctx2 = document.getElementById("myChart2").getContext('2d');
+var myChart = new Chart(ctx2, {
+    type: 'bar',
+    data: {
+        labels: ["Infrastructure", "Finance", "Quantity", "Access", "Health", "violence"],
+        datasets: [{
+            label: '# of Categories in this Month',
+            data: [90, {{count($finance)}}, {{count($quantity)}}, {{count($access)}}, {{count($health)}}, {{count($violence)}}],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>
+
 </body>
 </html>

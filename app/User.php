@@ -19,6 +19,7 @@ class User extends Authenticatable implements JWTSubject
      * @var array
      */
     //protected $guard_name = 'web'; // or whatever guard you want to use
+   protected $guard_name = 'web'; // or whatever guard you want to use
 
     protected $fillable = [
         'name', 'email', 'password','image','position','body'

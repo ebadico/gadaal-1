@@ -82,9 +82,16 @@
                 <div class="col-md-4">
 
                      <select class="form-control" id="role" name="role" required="">
-                       
+<!--                                 <option>--- Select role ---</option>
+ -->                            @foreach ($roles as $role)
+                                <option value="{{ $role->id }}">{{ $role->name }} </option>
+                            @endforeach;
                         </select>
-                   
+                    @if ($errors->has('role'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('role') }}</strong>
+                        </span>
+                    @endif 
                    
                 </div>
             </div>

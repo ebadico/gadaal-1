@@ -47,11 +47,11 @@ class HomeController extends Controller
             ->toArray();
             //return $counttwons;
             $now = Carbon::now();
-            $allStatuses = survey::currentStatus('Not Fixed');
+           // $allStatuses = survey::currentStatus('Not Fixed');
 
-            $infrastructure=survey::where('infrastructure', '1')
+            $infrastructure=survey::infrastructure()
                     ->whereMonth('created_at', $now->month)->get();
-            $finance=survey::where('finance', '1')
+            $finance=survey::finance()
                     ->whereMonth('created_at', $now->month)->get();
             $quantity=survey::where('quantity', '1')
                     ->whereMonth('created_at', $now->month)->get();

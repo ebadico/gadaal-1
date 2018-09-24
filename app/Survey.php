@@ -3,12 +3,13 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use Spatie\ModelStatus\HasStatuses;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Survey extends Model
 {
 
-    use HasStatuses;
+    use SoftDeletes;
+    protected $dates = ['deleted_at'];
     
           protected $fillable = [
 
@@ -24,12 +25,56 @@ class Survey extends Model
 
           ];
 
+public function Status()
+              {
+            return $this->belongsToMany(Status::class)->withPivot('note');
+              }
 // a survey belongs to one project 
+public function scopeFixed($query)
+    {
+        return $query->where('status_id', 1);
+    }
+public function scopeInfrastructure($query)
+    {
+        return $query->where('infrastructure', 1);
+    }
+
+public function scopeFinance($query)
+    {
+        return $query->where('finance', 1);
+    }
 
  public function town()
               {
                   return $this->belongsTo(Town::class);
               }
+
+public function getinfrastructureAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+public function getfinanceAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+public function getquantityAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+public function getaccessAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+public function gethealthAttribute($value)
+    {
+        return ($value ? 'Yes' : 'No');
+    }
+public function getviolenceAttribute($value)
+    {
+           return ($value ? 'Yes' : 'No');
+    }
+
+
 
 
            public function questions()
@@ -41,6 +86,8 @@ class Survey extends Model
     {
         return ($value ? 'Yes' : 'No');
     }
+
+
   public function getkeyAttribute($value)
     {
         return ($value ? 'Yes' : 'No');
