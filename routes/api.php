@@ -11,14 +11,10 @@ Route::group(['prefix'=>'auth'], function ($router) {
 });
 
 
-
-   
-
-
-    Route::apiResource('surveys', 'Api\SurveyController');
+Route::apiResource('surveys', 'Api\SurveyController');
 
     // Route::apiResource('categories', 'CategoryController');
     // Route::get('projects', 'ProjectController@index');
-    // Route::get('projects/{project}', 'ProjectController@show');
+    // Route::get('projects/{projeżt}', 'ProjectController@show');
     // Route::apiResource('towns', 'TownController');
     // Route::apiResource('questions', 'QuestionController');
