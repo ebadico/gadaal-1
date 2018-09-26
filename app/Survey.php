@@ -181,10 +181,7 @@ public function getsecuritydayAttribute($value)
     {
         return ($value ? 'Yes' : 'No');
     }
-  public function getsgenderAttribute($value)
-    {
-        return ($value ? 'Yes' : 'No');
-    }
+  
 
 
 public function getdrinkAttribute($value)

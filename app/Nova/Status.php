@@ -57,11 +57,12 @@ class Status extends Resource
     public function StatusField()
     {
 
-        return BelongsToMany::make('Surveys')
+    
+         return BelongsToMany::make('Surveys')
                 ->fields(function () {
                     return [
-                        Text::make('note')                
-                            ->rules('required', 'max:255')
+                        Textarea::make('Comments','note')                
+                            ->rules('required')
                             ->onlyOnIndex(),
 
                     ];

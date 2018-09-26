@@ -87,7 +87,7 @@ public function StatusField()
                 ->fields(function () {
                     return [
                         Textarea::make('Comments','note')                
-                            ->rules('required', 'max:255'),
+                            ->rules('required'),
                     ];
                 });
     }
@@ -229,6 +229,7 @@ public function StatusField()
     public function filters(Request $request)
     {
         return [
+            new Filters\SurveyStatus,
 
         ];
     }

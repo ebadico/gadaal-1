@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ mix('app.css', 'nova-assets') }}">
+    <link rel="stylesheet" href="{{ mix('app.css', 'vendor/nova') }}">
 
     <!-- Tool Styles -->
     @foreach(Nova::availableStyles(request()) as $name => $path)
@@ -25,7 +25,7 @@
             <div class="min-h-screen flex-none pt-header min-h-screen w-sidebar bg-grad-sidebar px-6">
                 <a href="{{ Nova::path() }}">
                     <div class="absolute pin-t pin-l pin-r bg-logo flex items-center w-sidebar h-header px-6 text-white">
-                       @include('nova::partials.logo')
+                       <b><h4>{{ Nova::name() }}</h4></b>
                     </div>
                 </a>
 
@@ -70,9 +70,9 @@
     </script>
 
     <!-- Scripts -->
-    <script src="{{ mix('manifest.js', 'nova-assets') }}"></script>
-    <script src="{{ mix('vendor.js', 'nova-assets') }}"></script>
-    <script src="{{ mix('app.js', 'nova-assets') }}"></script>
+    <script src="{{ mix('manifest.js', 'vendor/nova') }}"></script>
+    <script src="{{ mix('vendor.js', 'vendor/nova') }}"></script>
+    <script src="{{ mix('app.js', 'vendor/nova') }}"></script>
 
     <!-- Build Nova Instance -->
     <script>
