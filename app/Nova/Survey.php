@@ -58,9 +58,9 @@ class Survey extends Resource
            
             $this->StatusField(),
             ID::make()->sortable(),
-            Text::make('fullname')->hideWhenUpdating(),
-            Text::make('phone')->hideWhenUpdating(),
-            Text::make('age')
+            Text::make('Fullname')->hideWhenUpdating(),
+            Text::make('Phone')->hideWhenUpdating(),
+            Text::make('Age')
                 ->sortable()
                 ->hideWhenUpdating(),
             Text::make('Gender')->hideWhenUpdating(),
@@ -103,9 +103,9 @@ public function StatusField()
                      ->hideFromIndex(),
                 Text::make('Is there any broken tap','tap')
                      ->hideFromIndex(),
-                Text::make('fence')
+                Text::make('Is your fence broken?','fence')
                      ->hideFromIndex(),
-                Text::make('gate')
+                Text::make('Is your fence broken?','gate')
                      ->hideFromIndex(),
             ];
         }
@@ -126,7 +126,7 @@ public function StatusField()
                     ->hideFromIndex(),
                 Text::make('Do you have any Income?','income')
                     ->hideFromIndex(),
-                Text::make('Do you receive the water receipt','invoice')
+                Text::make('8. Did you receive water receipt late time at the end of each the month?','invoice')
                     ->hideFromIndex(),
                 Text::make('is there any cheating at the water point?','cheating')
                     ->hideFromIndex(),
@@ -159,7 +159,7 @@ public function StatusField()
                     ->hideFromIndex(),
                 Text::make('is the gate locked more often?','hardwater')
                     ->hideFromIndex(),
-                Text::make('Is the water kiosk far from you more than 500 Meter','faraway')
+                Text::make('Is the water kiosk far from you more than 500 Meter','faraway?')
                     ->hideFromIndex(),
                 Text::make('Do you wait the kiosk line more than 15 munites?','longer')
                     ->hideFromIndex(),
@@ -176,7 +176,9 @@ public function StatusField()
     protected function Health()
         {
             return [
-                Text::make('Do you drink the kiosk  water?', 'drink')
+                Text::make('Do you feel any problem when you drink the kiosk water?', 'drink')
+                    ->hideFromIndex(),
+                Text::make('Do you feel sick when you drink the kiosk water?', 'sick')
                     ->hideFromIndex(),
                 Text::make('Do you feel headache after drinking the water?', 'headache')
                     ->hideFromIndex(),
@@ -184,8 +186,7 @@ public function StatusField()
                     ->hideFromIndex(),
                 Text::make('Do you feel stomachache after drinking the water??','stomachache')
                     ->hideFromIndex(),
-                Text::make('Do you have diarrhea when you drink the kiosk water','diarrhea')
-                    ->hideFromIndex(),
+                
             ];
         }
 
